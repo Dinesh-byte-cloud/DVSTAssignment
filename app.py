@@ -8,7 +8,7 @@ st.set_page_config(page_title = 'Dashboard', layout = "wide")
 @st.cache_data
 def load_data():
     df = pd.read_excel(
-        r"C:\Users\DINESH KRISHNA\Downloads\DVSTAssignment\dataAnalysis\Financial_Samples.xlsx",
+        r"Financial_Samples.xlsx",
         parse_dates=["Date"]
     )
     return df
@@ -254,3 +254,4 @@ elif page == "Data Quality & Assumptions":
         st.success("Profit formula holds exactly.")
 
 print(filtered_df.columns)
+
